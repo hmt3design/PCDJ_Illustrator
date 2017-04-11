@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--(c)2017 -->
+<skin targetversion="3" skinname="DEX3-SS-NIGHT-1280" screenwidth="1280" screenheight="800" >
+
+<!-- describes what aspect ratios and resolutions this skin supports (including the actual images for them) --> 
+<aspectratios_supported> 
+	<aspectratio_supported name="16:10" aspectratio="1.600"> 
+		<image name="DEX3-SS-NIGHT-1280.png" resolutionx="1280" resolutiony="800" /> 
+	</aspectratio_supported> 
+</aspectratios_supported> 
+
+<!-- ======================= MAIN WINDOW STARTS HERE ======================= -->
+<window action="main" width="1280" height="800" graphicsfile=".png">
+
+<!-- ======================= -->
+<!-- Buttons -->
+<!-- ======================= -->
+<!-- global -->
+<button action="minimize" width="30" height="30" posx="1160" posy="5" overx="1160" overy="810" />
+<button action="maximize" width="30" height="30" posx="1200" posy="5" overx="1200" overy="810" />
+<button action="close" width="30" height="30" posx="1240" posy="5" overx="1240" overy="810" />
+<button action="recording" width="70" height="30" posx="900" posy="5" overx="920" overy="810" />
+<button action="learn" width="70" height="30" posx="980" posy="5" isswitch="yes" selx="1000" sely="810" />
+<button action="cfg" width="70" height="30" posx="1060" posy="5" downx="1080" downy="810" />
+<button action="lock_crossfaders" width="30" height="30" posx="710" posy="150" isswitch="yes" selx="960" sely="850" />
+<button action="autodj_next" width="50" height="30" posx="690" posy="190" downx="1000" downy="850" />
+<button action="autodj_to_left" width="30" height="30" posx="510" posy="230" downx="920" downy="850" />
+<button action="autodj_to_right" width="30" height="30" posx="710" posy="230" downx="1060" downy="850" />
+<button action="search_stop" width="30" height="30" posx="1240" posy="750" downx="1240" downy="810" />
+<button action="list_filter_audio" width="70" height="30" posx="510" posy="550" isswitch="yes" selx="510" sely="810" />
+<button action="list_filter_video" width="70" height="30" posx="510" posy="590" isswitch="yes" selx="510" sely="850" />
+<button action="list_filter_karaoke" width="70" height="30" posx="510" posy="630" isswitch="yes" selx="510" sely="890" />
+<button action="list_filter_all" width="70" height="30" posx="510" posy="670" downx="510" downy="930" />
+<button action="list_sort" width="70" height="30" posx="510" posy="710" downx="510" downy="970" />
+<button action="list_tag_edit" width="70" height="30" posx="590" posy="550" downx="590" downy="810" />
+<button action="shuffle" width="70" height="30" posx="590" posy="590" downx="590" downy="850" />
+<button action="random" width="70" height="30" posx="590" posy="630" isswitch="yes" selx="590" sely="890" />
+<button action="autodj" width="70" height="30" posx="590" posy="670" isswitch="yes" selx="590" sely="930" />
+<button action="clear" width="70" height="30" posx="590" posy="710" downx="590" downy="970" />
+<button action="ss_preview" width="30" height="30" posx="630" posy="750" isswitch="yes" selx="1060" sely="850" />
+<button action="add" width="30" height="30" posx="670" posy="710" downx="670" downy="970" />
+<button action="remove" width="30" height="30" posx="670" posy="750" downx="670" downy="1010" />
+<button action="drag_up" width="30" height="30" posx="710" posy="710" downx="710" downy="970" />
+<button action="drag_down" width="30" height="30" posx="710" posy="750" downx="710" downy="1010" />
+<button action="list_color_1" width="30" height="30" posx="670" posy="550" downx="670" downy="810" />
+<button action="list_color_2" width="30" height="30" posx="710" posy="550" downx="710" downy="810" />
+<button action="list_color_3" width="30" height="30" posx="670" posy="590" downx="670" downy="850" />
+<button action="list_color_4" width="30" height="30" posx="710" posy="590" downx="710" downy="850" />
+<button action="list_color_5" width="30" height="30" posx="670" posy="630" downx="670" downy="890" />
+<button action="list_color_6" width="30" height="30" posx="710" posy="630" downx="710" downy="890" />
+<button action="list_color_7" width="30" height="30" posx="670" posy="670" downx="670" downy="930" />
+<button action="list_color_clear" width="30" height="30" posx="710" posy="670" downx="710" downy="930" />
+
+<!-- deck A / 0 -->
+<button action="deck_load"  deck="0" width="70" height="30" posx="10" posy="190" downx="10" downy="810" />
+<button action="deck_cue"  deck="0" width="70" height="30" posx="90" posy="190" overx="90" overy="810" downx="90" downy="810" mouseoverdisabled="yes" />
+<button action="deck_play_pause"  deck="0" width="70" height="30" posx="170" posy="190" overx="170" overy="810" downx="170" downy="810" mouseoverdisabled="yes" />
+<button action="deck_unload"  deck="0" width="70" height="30" posx="250" posy="190" downx="250" downy="810" />
+<button action="deck_monitor"  deck="0" width="70" height="30" posx="330" posy="190" selx="330" sely="810" isswitch="yes" />
+
+<!-- deck B / 1 -->
+<button action="deck_load"  deck="1" width="70" height="30" posx="10" posy="380" downx="10" downy="810" />
+<button action="deck_cue"  deck="1" width="70" height="30" posx="90" posy="380" overx="90" overy="810" downx="90" downy="810" mouseoverdisabled="yes" />
+<button action="deck_play_pause"  deck="1" width="70" height="30" posx="170" posy="380" overx="170" overy="810" downx="170" downy="810" mouseoverdisabled="yes" />
+<button action="deck_unload"  deck="1" width="70" height="30" posx="250" posy="380" downx="250" downy="810" />
+<button action="deck_monitor"  deck="1" width="70" height="30" posx="330" posy="380" selx="330" sely="810" isswitch="yes" />
+
+<!-- deck C / 2 -->
+<button action="deck_load"  deck="2" width="70" height="30" posx="10" posy="570" downx="10" downy="810" />
+<button action="deck_cue"  deck="2" width="70" height="30" posx="90" posy="570" overx="90" overy="810" downx="90" downy="810" mouseoverdisabled="yes" />
+<button action="deck_play_pause"  deck="2" width="70" height="30" posx="170" posy="570" overx="170" overy="810" downx="170" downy="810" mouseoverdisabled="yes" />
+<button action="deck_unload"  deck="2" width="70" height="30" posx="250" posy="570" downx="250" downy="810" />
+<button action="deck_monitor"  deck="2" width="70" height="30" posx="330" posy="570" selx="330" sely="810" isswitch="yes" />
+
+<!-- deck D / 3 -->
+<button action="deck_load"  deck="3" width="70" height="30" posx="10" posy="760" downx="10" downy="810" />
+<button action="deck_cue"  deck="3" width="70" height="30" posx="90" posy="760" overx="90" overy="810" downx="90" downy="810" mouseoverdisabled="yes" />
+<button action="deck_play_pause"  deck="3" width="70" height="30" posx="170" posy="760" overx="170" overy="810" downx="170" downy="810" mouseoverdisabled="yes" />
+<button action="deck_unload"  deck="3" width="70" height="30" posx="250" posy="760" downx="250" downy="810" />
+<button action="deck_monitor"  deck="3" width="70" height="30" posx="330" posy="760" selx="330" sely="810" isswitch="yes" />
+
+    
+<!-- ======================= -->
+<!-- Sliders/Knobs -->
+<!-- ======================= -->
+<!-- global -->
+<slider action="cf_audio" width="150" height="30" posx="550" posy="230" cursorwidth="20" cursorheight="30" cursorupx="1210" cursorupy="890" />
+<slider action="preview" width="110" height="30" posx="510" posy="750" cursorwidth="20" cursorheight="30" cursorupx="280" cursorupy="960" />
+<!-- slider action="cf_video" width="150" height="30" posx="550" posy="440" cursorwidth="20" cursorheight="30" cursorupx="1210" cursorupy="890" -->
+    
+<!-- deck A / 0 -->
+<slider action="deck_volume"  deck="0" width="20" height="170" posx="440" posy="50" cursorwidth="20" cursorheight="20" cursorupx="1170" cursorupy="890" />
+<slider action="deck_pos"  deck="0" width="270" height="40" posx="10" posy="140" selx="10" sely="850" datacolor="#FF0000" />
+
+<!-- deck B / 1 -->
+<slider action="deck_volume"  deck="1" width="20" height="170" posx="440" posy="240" cursorwidth="20" cursorheight="20" cursorupx="1170" cursorupy="890" />
+<slider action="deck_pos"  deck="1" width="270" height="40" posx="10" posy="330" selx="10" sely="900" datacolor="#00FF00" />
+
+<!-- deck C / 2 -->
+<slider action="deck_volume"  deck="2" width="20" height="170" posx="440" posy="430" cursorwidth="20" cursorheight="20" cursorupx="1170" cursorupy="890" />
+<slider action="deck_pos"  deck="2" width="270" height="40" posx="10" posy="520" selx="10" sely="950" datacolor="#FF00FF" />
+
+<!-- deck D / 3 -->
+<slider action="deck_volume"  deck="3" width="20" height="170" posx="440" posy="620" cursorwidth="20" cursorheight="20" cursorupx="1170" cursorupy="890" />
+<slider action="deck_pos"  deck="3" width="270" height="40" posx="10" posy="710" selx="410" sely="1000" datacolor="#FFFF00" />
+
+<!-- ======================= -->
+<!-- Text/Labels -->
+<!-- ======================= -->
+<!-- global -->
+<textarea action="time"  width="100" height="20" posx="200" posy="10" transparent="yes" fontcolor="#ffffff" fontsize="14" fontstyle="normal" fontalign="left" />
+<textarea action="demo_buy_text" width="150" height="25" posx="300" posy="10" transparent="yes" fontcolor="#FF0000" fontsize="14" fontstyle="normal" fontalign="center" /> <editarea action="et_search" width="470" height="30" posx="760" posy="750" backcolor="#000000" fontcolor="#FFFFFF" fontsize="14" fontstyle="normal" />
+<dropdownlist action="dropdown_video_transition"  width="230" height="20" posx="510" posy="510" transparent="yes" fontname="arial" fontsize="14" fontstyle="normal" fontalign="center" fontcolor="#AAAAAA" dontshowlabel="no" fontoffsetx="27" />
+
+    
+<!-- deck A / 0 -->
+<textarea action="deck_artistname"  deck="0" width="230" height="20" posx="50" posy="50" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="left" caption="artist" />
+<textarea action="deck_titlename"  deck="0" width="230" height="20" posx="50" posy="80" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="left" caption="song title" />
+<textarea action="deck_elapsed"  deck="0" width="100" height="20" posx="50" posy="110" transparent="yes" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="left" caption="elapsed" />
+<textarea action="deck_remained"  deck="0" width="100" height="20" posx="180" posy="110" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="right" caption="remain" />
+
+<!-- deck B / 1 -->
+<textarea action="deck_artistname"  deck="1" width="230" height="20" posx="50" posy="240" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="left" caption="artist" />
+<textarea action="deck_titlename"  deck="1" width="230" height="20" posx="50" posy="270" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="left" caption="song title" />
+<textarea action="deck_elapsed"  deck="1" width="100" height="20" posx="50" posy="300" transparent="yes" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="left" caption="elapsed" />
+<textarea action="deck_remained"  deck="1" width="100" height="20" posx="180" posy="300" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="right" caption="remain" />
+
+<!-- deck C / 2 -->
+<textarea action="deck_artistname"  deck="2" width="230" height="20" posx="50" posy="430" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="left" caption="artist" />
+<textarea action="deck_titlename"  deck="2" width="230" height="20" posx="50" posy="460" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="left" caption="song title" />
+<textarea action="deck_elapsed"  deck="2" width="100" height="20" posx="50" posy="490" transparent="yes" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="left" caption="elapsed" />
+<textarea action="deck_remained"  deck="2" width="100" height="20" posx="180" posy="490" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="right" caption="remain" />
+
+<!-- deck D / 3 -->
+<textarea action="deck_artistname"  deck="3" width="230" height="20" posx="50" posy="620" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="left" caption="artist" />
+<textarea action="deck_titlename"  deck="3" width="230" height="20" posx="50" posy="650" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="left" caption="song title" />
+<textarea action="deck_elapsed"  deck="3" width="100" height="20" posx="50" posy="680" transparent="yes" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="left" caption="elapsed" />
+<textarea action="deck_remained"  deck="3" width="100" height="20" posx="180" posy="680" fontcolor="#FFFFFF" fontname="Arial" fontsize="14" fontstyle="normal" fontalign="right" caption="remain" />
+
+<!-- ======================= -->
+<!-- Images -->
+<!-- ======================= -->
+<!-- global -->
+<!-- deck A / 0 -->
+<image action="img_album_art"  deck="0" width="110" height="110" posx="290" posy="50" />
+
+<!-- deck B / 1 -->
+<image action="img_album_art"  deck="1" width="110" height="110" posx="290" posy="240" />
+
+<!-- deck C / 2 -->
+<image action="img_album_art"  deck="2" width="110" height="110" posx="290" posy="430" />
+
+<!-- deck D / 3 -->
+<image action="img_album_art"  deck="3" width="110" height="110" posx="290" posy="620" />
+
+<!-- ======================= -->
+<!-- Browser -->
+<!-- ======================= -->
+<!-- global -->
+<browser action="browser" aspectratio="1.6" width="190" height="260" posx="760" posy="480" fontname="Arial" fontsize="14" iconx="920" icony="890" iconsize="20" fontcolor="#D7D7D7" cursorcolor="#DDDDDD" cursorcoloractive="#7F7FFF" />
+<!-- ATTN: we use the aspectratio tag so that the right object (with the right height) is loaded for 16:10 (1.6), 16:9 (1.777) and 4:3 (1.333) aspect ratios -->
+
+<!-- ======================= -->
+<!-- Playlist -->
+<!-- ======================= -->
+<!-- global -->
+<list action="playlist" aspectratio="1.6" width="310" height="340" posx="960" posy="50" fontcolor="#D7D7D7" fontcolortitle="#D7D7FF" fontcolorsort="#7F7FFF" cursorcolor="#DDDDDD" cursorcoloractive="#7F7FFF" />
+<list action="sidelist" aspectratio="1.6" width="310" height="340" posx="960" posy="400" fontcolor="#D7D7D7" fontcolortitle="#D7D7FF" fontcolorsort="#7F7FFF" cursorcolor="#DDDDDD" cursorcoloractive="#7F7FFF" />
+
+<!-- ======================= -->
+<!-- Vu-meter -->
+<!-- ======================= -->
+<!-- global -->
+<vumeter action="vm_masterl" width="60" height="170" posx="510" posy="50" upx="790" upy="810" />
+<vumeter action="vm_masterr" width="60" height="170" posx="620" posy="50" upx="790" upy="810" />
+
+<!-- deck A / 0 -->
+<vumeter action="vm_deckl"  deck="0" width="20" height="170" posx="410" posy="50" upx="760" upy="810" />
+<vumeter action="vm_deckr"  deck="0" width="20" height="170" posx="470" posy="50" upx="760" upy="810" />
+
+<!-- deck B / 1 -->
+<vumeter action="vm_deckl"  deck="1" width="20" height="170" posx="410" posy="240" upx="760" upy="810" />
+<vumeter action="vm_deckr"  deck="1" width="20" height="170" posx="470" posy="240" upx="760" upy="810" />
+
+<!-- deck C / 2 -->
+<vumeter action="vm_deckl"  deck="2" width="20" height="170" posx="410" posy="430" upx="760" upy="810" />
+<vumeter action="vm_deckr"  deck="2" width="20" height="170" posx="470" posy="430" upx="760" upy="810" />
+
+<!-- deck D / 3 -->
+<vumeter action="vm_deckl"  deck="3" width="20" height="170" posx="410" posy="620" upx="760" upy="810" />
+<vumeter action="vm_deckr"  deck="3" width="20" height="170" posx="470" posy="620" upx="760" upy="810" />
+
+<!-- ======================= -->
+<!-- SoundDisplay -->
+<!-- ======================= -->
+<!-- global -->
+<!-- deck A / 0 -->
+<sounddisplay action="sd_deck"  deck="0" width="40" height="390" posx="760" posy="80" datacolor="#FF0000" />
+
+<!-- deck B / 1 -->
+<sounddisplay action="sd_deck"  deck="1" width="40" height="390" posx="810" posy="80" datacolor="#00FF00" />
+
+<!-- deck C / 2 -->
+<sounddisplay action="sd_deck"  deck="2" width="40" height="390" posx="860" posy="80" datacolor="#FF00FF" />
+
+<!-- deck D / 3 -->
+<sounddisplay action="sd_deck"  deck="3" width="40" height="390" posx="910" posy="80" datacolor="#FFFF00" />
+
+<!-- ======================= -->
+<!-- Video Preview -->
+<!-- ======================= -->
+<!-- global -->
+<video action="video_preview" width="230" height="130" posx="510" posy="270" />
+<video action="deck_video"  deck="0" width="110" height="62" posx="510" posy="410" />
+<video action="deck_video"  deck="1" width="110" height="62" posx="630" posy="410" />
+<!-- deck A / 0 -->
+<!-- deck B / 1 -->
+<!-- deck C / 2 -->
+<!-- deck D / 3 -->
+
+<!-- ======================= -->
+<!-- Waveform -->
+<!-- ======================= -->
+<!-- global -->
+<!-- deck A / 0 -->
+<waveform action="deck_waveform"  deck="0" width="270" height="20" posx="10" posy="140" datacolor="#FF0000" />
+
+<!-- deck B / 1 -->
+<waveform action="deck_waveform"  deck="1" width="270" height="20" posx="10" posy="330" datacolor="#00FF00" />
+    
+<!-- deck C / 2 -->
+<waveform action="deck_waveform"  deck="2" width="270" height="20" posx="10" posy="520" datacolor="#FF00FF" />
+    
+<!-- deck D / 3 -->
+<waveform action="deck_waveform"  deck="3" width="270" height="20" posx="10" posy="710" datacolor="#FFFF00" />
+
+</window>
+<!-- ======================= MAIN WINDOW ENDS HERE ======================= -->
+</skin>
